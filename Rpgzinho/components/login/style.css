@@ -1,0 +1,84 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background-image: url("../../src/wallpaper.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+   
+}
+
+main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    border: 4px solid #193d11;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+main div img{
+    width: 400px;
+}
+
+main div form{
+    width: 40%;
+    height: 80%;
+    border-left: 2px solid #193d11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main div form label{
+    font-size: 25px;
+    text-align: left;
+}
+main div form input{
+    padding: 10px;
+    width: 50%;
+}
+
+main div form button{
+    padding: 10px;
+    font-size: 24px;
+    background-color: #193d11;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 2px;
+    width: 40%;
+    margin-top: 30px;
+    transition: 1s transform;
+}
+main div form button:hover{
+ transform: scale(1.1);
+}
+
+main a{
+    color: whitesmoke;
+    font-size: 25px;
+    margin: 20px;
+    transition: 2s transform;
+}
+
+main a:hover{
+    transform: scale(1.2);
+}
