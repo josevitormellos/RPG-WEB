@@ -21,18 +21,6 @@ if(!isset($_SESSION['id'])){
     <title>RPG DOS CRIA</title>
 </head>
 <body >
-    <header>
-        <div class="conteiner">
-            <a href="../../index.php"><img src="../../src/logo.png"/></a>
-            <div>
-                <ul>
-                    <li><?php echo $_SESSION['username'];?></li>
-                    <li>Jogar</li>
-                    <li><a href="php/logout.php">Sair</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
 
     <main  id="game">
         <button class="iniciar" onclick="inits();" id="bt">Escolher Heroi</button>
@@ -59,12 +47,64 @@ if(!isset($_SESSION['id'])){
                 
             </div>
         </div>
+
+        <div id="batalha">
+            <div class="status">
+                <p>Nome Player</p>
+                <button disabled id="life">????/????</button>
+                <button disabled id="mana">????/????</button>
+            </div>
+            <div class="moveStatus">
+                <button onclick="TrocarInimigo();">Procurar Inimigo</button>
+                <button>Golpes</button>
+                <button>Fugir</button>
+                <textarea disabled></textarea>
+            </div>
+            <div class="skills">
+                <table>
+                    <tr>
+                        <th><img src="../../src/Skills/1.png" width="100%" /></th>
+                        <th><img src="../../src/Skills/2.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/3.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/4.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/5.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/6.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/7.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/8.png" width="100%"/></th>
+                    </tr>
+                    <tr>
+                        <th><img src="../../src/Skills/9.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/10.png" width="100%"/></th>
+                        <th><img src="../../src/Skills/11.png" width="100%"/></th>
+                        <th>Skill 12</th>
+                        <th>Skill 13</th>
+                        <th>Skill 14</th>
+                        <th>Skill 15</th>
+                        <th>Skill 16</th>
+                    </tr>
+                   
+                </table>
+            </div>
+
+            <div class="enemy">
+                <button onclick="SelectionEnemy();"><div>
+                    <p id="enemyNome"></p>
+                </div>
+                <img id="pele" src="#" width="200px"/>
+                </button>
+            </div> 
+            <div id="enemyL" class="enemyLife">
+                
+            </div>
+            
+        </div>
     </main>
     
     <?php 
         init();
     ?>
     <script src="../../js/initGame.js"></script>
+    <script src="../../js/procuraEnemy.js"></script>
     
 </body>
 </html>

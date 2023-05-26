@@ -1,0 +1,36 @@
+{ "inimigos":[
+    {
+        "nome": "Goblin",
+        "id": 1,
+        "ataque" : 10,
+        "defesa": 5,
+        "vida": 50,
+        "critico": 1.01,
+        "velocidade": 3,
+        "mana": 50,
+        "local": "goblin2.png"
+    },
+    {
+        "nome": "Goblin Arqueiro",
+        "id": 1,
+        "ataque" : 20,
+        "defesa": 1,
+        "vida": 30,
+        "critico": 1.05,
+        "velocidade": 2,
+        "mana": 50,
+        "local": "goblin3.png"
+    },
+    {
+        "nome": "Goblin Guerreiro",
+        "id": 1,
+        "ataque" : 12,
+        "defesa": 10,
+        "vida": 70,
+        "critico": 1.02,
+        "velocidade": 3.5,
+        "mana": 30,
+        "local": "goblin1.png"
+    }
+
+]}
